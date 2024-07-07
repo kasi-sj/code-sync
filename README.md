@@ -2,29 +2,19 @@
 <p id="description">TrackMe is a comprehensive project that includes a backend server, a frontend web application, and a browser extension. The project is designed to track user screen time, provide insights into browsing habits, and manage website access restrictions.</p>
 <h2>🧐 Features</h2>
 
-## Web Application
+## DeskTop Application
 
 <table>
   <tr>
-    <td><img src="https://github.com/kasi-sj/track-me-website/assets/110708280/2acf3498-4276-4a23-a468-dd10c278671f" alt="Screenshot 1" ></td>
-    <td><img src="https://github.com/kasi-sj/track-me-website/assets/110708280/0f47057f-1817-414a-872a-762734cee6d1" alt="Screenshot 2" ></td>
+    <td><img src="https://github.com/kasi-sj/code-sync/assets/110708280/65d70e0d-df5d-44ab-9cac-833b196d3e27" alt="Screenshot 1" ></td>
+    <td><img src="https://github.com/kasi-sj/code-sync/assets/110708280/8a18dbd2-56a7-4e19-bb7a-dae9c98c5946" alt="Screenshot 2" ></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/kasi-sj/track-me-website/assets/110708280/76867fe9-fec4-40c4-8912-d1be5e787fdb" alt="Screenshot 3" ></td>
-    <td><img src="https://github.com/kasi-sj/track-me-website/assets/110708280/5c8163bc-a4f5-44da-b439-a0bb4d944f28" alt="Screenshot 4" ></td>
+    <td><img src="https://github.com/kasi-sj/code-sync/assets/110708280/337d8a7b-c23c-4170-8246-3319eb9a6d9f" alt="Screenshot 3" ></td>
+    <td><img src="https://github.com/kasi-sj/code-sync/assets/110708280/f43dd2d0-65ff-49c4-9b5b-e1d4a2eed38b" alt="Screenshot 4" ></td>
   </tr>
   <tr>
-    <td colspan="2" style="text-align:center;"><img src="https://github.com/kasi-sj/track-me-website/assets/110708280/8e252a6d-fff3-4127-be8c-dcad575014ad" alt="Screenshot 5" ></td>
-  </tr>
-</table>
-
-## Web Extension
-
-
-<table>
-  <tr>
-    <td><img src="https://github.com/kasi-sj/activity-tracker-extension/assets/110708280/a2ca1b96-5eb9-4f4d-8045-eaf363dca02c" alt="Screenshot 1" ></td>
-    <td><img src="https://github.com/kasi-sj/activity-tracker-extension/assets/110708280/ba0e5cdf-0bd9-4b58-8313-202700aa5400" alt="Screenshot 2" ></td>
+    <td colspan="2" style="text-align:center;"><img src="https://github.com/kasi-sj/code-sync/assets/110708280/f62b99b4-728f-478c-9e17-7e4a984f5aaa" alt="Screenshot 5" ></td>
   </tr>
 </table>
 
