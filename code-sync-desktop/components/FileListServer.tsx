@@ -53,7 +53,7 @@ const FileCard = ({
                     }}
                   >
                     <FileIcon file={name || ""} isdir={true} />
-                    <p className={`"text-gray-200 ${getSize(size+1)} overflow-ellipsis truncate`}>
+                    <p className={`text-gray-200 ${getSize(size+1)} overflow-ellipsis truncate`}>
                       {name}
                     </p>
                   </div>

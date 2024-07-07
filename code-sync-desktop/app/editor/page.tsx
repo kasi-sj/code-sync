@@ -9,7 +9,7 @@ import FileTabs from "@/components/FileTabsServer";
 
 const Loading = () => {
   return (
-    <div className={`.flex justify-center h-full items-center `}>
+    <div className={`flex justify-center h-full items-center `}>
       <CircularProgress />
     </div>
   );
@@ -42,7 +42,7 @@ const Page = () => {
   }
 
   return (
-    <div className={`.bg-[rgb(23,23,23)] h-full `} onClick={
+    <div className={`bg-[rgb(23,23,23)] h-full `} onClick={
       (e) => {setSelectedFile(null)}
     }>
       <ResizableContainer
