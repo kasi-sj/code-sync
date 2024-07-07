@@ -39,7 +39,7 @@ This repository consists of three main components:
     Backend: Built with Ruby on Rails (user authentication and management)
     Frontend: Built with Next.js 
     Desktop: Built with Tauri (system API's)
-<p>The backend for user management in CodeCollab is reused from another project. For detailed information about the backend implementation, please refer to the <a href="https://github.com/kasi-sj/TrackMe/blob/main/trackme-extension/README.md">Backend README</a> of the original project.</p>
+<p>The backend for user management in CodeCollab is reused from another project. For detailed information about the backend implementation, please refer to the <a href="https://github.com/kasi-sj/TrackMe/blob/main/track-me-backend/README.md">Backend README</a> of the original project.</p>
 
 <h2>🛠️ Built With</h2>
 
