@@ -2,18 +2,6 @@
 <p id="description">  CodeCollab is a comprehensive project that includes a feature-rich code editor, designed to offer functionalities similar to VS Code. The project encompasses a robust set of features, including editing, opening, listing, creating, managing, and saving files and folders. Additionally, it integrates a basic terminal. The standout feature of CodeCollab is its collaborative editing capability, which leverages socket.io for real-time communication, allowing multiple users to work on the same codebase simultaneously.
 </p>
 
-<h2>🧐 Features</h2>
-<ul>
-  <li><strong>Open Files:</strong> Easily open existing files for viewing and editing.</li>
-  <li><strong>List Files and Folders:</strong> Browse and navigate your project directory structure seamlessly.</li>
-  <li><strong>Create Files and Folders:</strong> Quickly create new files and folders within your project.</li>
-  <li><strong>Edit Files:</strong> Provides a rich text editor for coding with syntax highlighting and code completion.</li>
-  <li><strong>Save Files:</strong> Save your work with a simple keystroke or button click.</li>
-  <li><strong>Manage Files and Folders:</strong> Rename, move, and delete files and folders as needed.</li>
-  <li><strong>Basic Terminal:</strong> Includes a basic terminal for running commands within the editor.</li>
-  <li><strong>Collaborative Editing:</strong> Real-time collaborative editing using socket.io, allowing multiple users to work on the same codebase simultaneously.</li>
-</ul>
-
 
 ## DeskTop Application
 
@@ -30,6 +18,18 @@
     <td colspan="2" style="text-align:center;"><img src="https://github.com/kasi-sj/code-sync/assets/110708280/f62b99b4-728f-478c-9e17-7e4a984f5aaa" alt="Screenshot 5" ></td>
   </tr>
 </table>
+
+<h2>🧐 Features</h2>
+<ul>
+  <li><strong>Open Files:</strong> Easily open existing files for viewing and editing.</li>
+  <li><strong>List Files and Folders:</strong> Browse and navigate your project directory structure seamlessly.</li>
+  <li><strong>Create Files and Folders:</strong> Quickly create new files and folders within your project.</li>
+  <li><strong>Edit Files:</strong> Provides a rich text editor for coding with syntax highlighting and code completion.</li>
+  <li><strong>Save Files:</strong> Save your work with a simple keystroke or button click.</li>
+  <li><strong>Manage Files and Folders:</strong> Rename, move, and delete files and folders as needed.</li>
+  <li><strong>Basic Terminal:</strong> Includes a basic terminal for running commands within the editor.</li>
+  <li><strong>Collaborative Editing:</strong> Real-time collaborative editing using socket.io, allowing multiple users to work on the same codebase simultaneously.</li>
+</ul>
 
 
 <h2>📁 Project Structure</h2>
@@ -73,9 +73,8 @@ Technologies used in the project:
 </ul>
 
 
-## 🌐 Live Demo
 
-- [Track-Me-Website](https://trackme-web-jade.vercel.app/).
+
 
 
 <h2>💖 Like My Work?</h2>
