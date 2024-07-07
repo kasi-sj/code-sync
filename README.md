@@ -40,11 +40,7 @@ This repository consists of three main components:
     Frontend: Built with Next.js
     Desktop: Built with Tauri
 
-Each component has its own detailed README file with specific setup instructions and features.
-<h2>📄 Subproject READMEs</h2>
-
-- [Frontend README](https://github.com/kasi-sj/TrackMe/blob/main/trackme-web/README.md)
-- [Browser Extension README](https://github.com/kasi-sj/TrackMe/blob/main/track-me-backend/README.md)
+<h2>📄 Backend for User Management</h2>
 - [Backend README](https://github.com/kasi-sj/TrackMe/blob/main/trackme-extension/README.md)
 
 <h2>🛠️ Built With</h2>
@@ -54,6 +50,27 @@ Technologies used in the project:
     Backend: Ruby on Rails, PostgreSQL
     Frontend: Next.js, Tailwind CSS, Next UI ,monaco-editor , primereact terminal
     Desktop: Tauri
+
+<h2>🔧 Backend Implementation</h2>
+<ul>
+  <li><strong>Operation Transformation:</strong> Ensures consistency of edits made by multiple users in real-time using server_version and client_version, allowing for smooth collaborative editing.</li>
+  <li><strong>Cursor Management:</strong> Tracks and updates cursor positions for all users, providing a seamless collaborative experience.</li>
+  <li><strong>Socket Channel:</strong> Utilizes socket channels for sending and receiving updates efficiently.</li>
+  <li><strong>Architecture:</strong> 
+    <ul>
+      <li>Multiple users connect to a single server (root server) that acts as the single source of truth.</li>
+      <li>The root server sends updates to all connected users, ensuring consistency.</li>
+      <li>Socket.io is used for managing connections and real-time communication.</li>
+    </ul>
+  </li>
+  <li><strong>File Management Channels:</strong> 
+    <ul>
+      <li>A single channel is created by the host (root server) for overall file management.</li>
+      <li>Separate channels are created by the host for each file that is in editing mode, allowing for focused updates and edits.</li>
+    </ul>
+  </li>
+  <li><strong>Terminal Integration:</strong> The terminal is connected by running system commands through a Rust API. Input and output streams are transferred from the frontend to the backend, enabling seamless command execution.</li>
+</ul>
 
 
 ## 🌐 Live Demo
