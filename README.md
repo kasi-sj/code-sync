@@ -1,5 +1,5 @@
 <h1 align="center" id="title">CodeSync Project</h1>
-<p id="description">  CodeCollab is a comprehensive project that includes a feature-rich code editor, designed to offer functionalities similar to VS Code. The project encompasses a robust set of features, including editing, opening, listing, creating, managing, and saving files and folders. Additionally, it integrates a basic terminal. The standout feature of CodeCollab is its collaborative editing capability, which leverages socket.io for real-time communication, allowing multiple users to work on the same codebase simultaneously.
+<p id="description">  CodeSync is a comprehensive project that includes a feature-rich code editor, designed to offer functionalities similar to VS Code with collaborative editing. The project encompasses a robust set of features, including editing, opening, listing, creating, managing, and saving files and folders. Additionally, it integrates a basic terminal. The standout feature of CodeCollab is its collaborative editing capability, which leverages socket.io for real-time communication, allowing multiple users to work on the same codebase simultaneously.
 </p>
 
 
