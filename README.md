@@ -1,6 +1,19 @@
-<h1 align="center" id="title">TrackMe Project</h1>
-<p id="description">TrackMe is a comprehensive project that includes a backend server, a frontend web application, and a browser extension. The project is designed to track user screen time, provide insights into browsing habits, and manage website access restrictions.</p>
+<h1 align="center" id="title">CodeSync Project</h1>
+<p id="description">  CodeCollab is a comprehensive project that includes a feature-rich code editor, designed to offer functionalities similar to VS Code. The project encompasses a robust set of features, including editing, opening, listing, creating, managing, and saving files and folders. Additionally, it integrates a basic terminal. The standout feature of CodeCollab is its collaborative editing capability, which leverages socket.io for real-time communication, allowing multiple users to work on the same codebase simultaneously.
+</p>
+
 <h2>🧐 Features</h2>
+<ul>
+  <li><strong>Open Files:</strong> Easily open existing files for viewing and editing.</li>
+  <li><strong>List Files and Folders:</strong> Browse and navigate your project directory structure seamlessly.</li>
+  <li><strong>Create Files and Folders:</strong> Quickly create new files and folders within your project.</li>
+  <li><strong>Edit Files:</strong> Provides a rich text editor for coding with syntax highlighting and code completion.</li>
+  <li><strong>Save Files:</strong> Save your work with a simple keystroke or button click.</li>
+  <li><strong>Manage Files and Folders:</strong> Rename, move, and delete files and folders as needed.</li>
+  <li><strong>Basic Terminal:</strong> Includes a basic terminal for running commands within the editor.</li>
+  <li><strong>Collaborative Editing:</strong> Real-time collaborative editing using socket.io, allowing multiple users to work on the same codebase simultaneously.</li>
+</ul>
+
 
 ## DeskTop Application
 
@@ -19,22 +32,13 @@
 </table>
 
 
-
-Here are some of the project's best features:
-
-    Tracks user screen time across websites
-    Implements business logic for screen time tracking
-    Handles user authentication and authorization
-    Visualizes screen time analytics in an intuitive dashboard
-    Allows users to restrict and limit website access
-
 <h2>📁 Project Structure</h2>
 
 This repository consists of three main components:
 
-    Backend: Built with Ruby on Rails
+    Backend: Built with Ruby on Rails 
     Frontend: Built with Next.js
-    Desktop: Built with TAURI (RUST)
+    Desktop: Built with Tauri
 
 Each component has its own detailed README file with specific setup instructions and features.
 <h2>📄 Subproject READMEs</h2>
@@ -48,8 +52,8 @@ Each component has its own detailed README file with specific setup instructions
 Technologies used in the project:
 
     Backend: Ruby on Rails, PostgreSQL
-    Frontend: Next.js, Material UI, Tailwind CSS, Next UI, React Query
-    Browser Extension: HTML, CSS, JavaScript, Manifest.json
+    Frontend: Next.js, Tailwind CSS, Next UI ,monaco-editor , primereact terminal
+    Desktop: Tauri
 
 
 ## 🌐 Live Demo
