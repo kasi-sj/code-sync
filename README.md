@@ -36,19 +36,17 @@
 
 This repository consists of three main components:
 
-    Backend: Built with Ruby on Rails 
-    Frontend: Built with Next.js
-    Desktop: Built with Tauri
-
-<h2>📄 Backend for User Management</h2>
-- [Backend README](https://github.com/kasi-sj/TrackMe/blob/main/trackme-extension/README.md)
+    Backend: Built with Ruby on Rails (user authentication and management)
+    Frontend: Built with Next.js 
+    Desktop: Built with Tauri (system API's)
+<p>The backend for user management in CodeCollab is reused from another project. For detailed information about the backend implementation, please refer to the <a href="https://github.com/kasi-sj/TrackMe/blob/main/trackme-extension/README.md">Backend README</a> of the original project.</p>
 
 <h2>🛠️ Built With</h2>
 
 Technologies used in the project:
 
     Backend: Ruby on Rails, PostgreSQL
-    Frontend: Next.js, Tailwind CSS, Next UI ,monaco-editor , primereact terminal
+    Frontend: Next.js, Tailwind CSS, Next UI , monaco-editor , primereact terminal
     Desktop: Tauri
 
 <h2>🔧 Backend Implementation</h2>
@@ -73,8 +71,12 @@ Technologies used in the project:
 </ul>
 
 
+### 📥 Download
 
+You can download the latest version of CodeCollab from the [releases page](https://github.com/kasi-sj/code-sync/releases/tag/v1.0.1).
 
 
 
 <h2>💖 Like My Work?</h2>
+
+Give this repo a star ⭐
