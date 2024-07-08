@@ -34,12 +34,13 @@
 
 <h2>📁 Project Structure</h2>
 
-This repository consists of three main components:
+This repository consists of four main components:
 
     Backend: Built with Ruby on Rails (user authentication and management)
-    Frontend: Built with Next.js 
-    Desktop: Built with Tauri (system API's)
-<p>The backend for user management in CodeCollab is reused from another project. For detailed information about the backend implementation, please refer to the <a href="https://github.com/kasi-sj/TrackMe/blob/main/track-me-backend/README.md">Backend README</a> of the original project.</p>
+    Websocket: Built with Socket.io (for real time communication)
+    Desktop: Built with Next.js and Tauri
+    Website: Built with Next.js
+
 
 <h2>🛠️ Built With</h2>
 
@@ -48,8 +49,91 @@ Technologies used in the project:
     Backend: Ruby on Rails, PostgreSQL
     Frontend: Next.js, Tailwind CSS, Next UI , monaco-editor , primereact terminal
     Desktop: Tauri
+    websocket: Socket.io
 
-<h2>🔧 Backend Implementation</h2>
+<h2>💻 Installation Steps:</h2>
+<h3>Desktop:</h3>
+
+<p>1. Clone the repository</p>
+
+```
+https://github.com/kasi-sj/code-sync
+```
+
+<p>2. Navigate to the project directory</p>
+
+```
+cd code-sync-desktop
+```
+
+<p>3. Install dependencies</p>
+
+```
+npm i
+```
+
+<p>4. Start the development server</p>
+
+```
+npm run tauri dev
+```
+
+<h3>Website:</h3>
+
+<p>1. Clone the repository</p>
+
+```
+https://github.com/kasi-sj/code-sync
+```
+
+<p>2. Navigate to the project directory</p>
+
+```
+cd code-sync-website
+```
+
+<p>3. Install dependencies</p>
+
+```
+npm i
+```
+
+<p>4. Start the development server</p>
+
+```
+npm run dev
+```
+
+<h3>Websocket:</h3>
+
+<p>1. Clone the repository</p>
+
+```
+https://github.com/kasi-sj/code-sync
+```
+
+<p>2. Navigate to the project directory</p>
+
+```
+cd code-sync-backend
+```
+
+<p>3. Install dependencies</p>
+
+```
+npm i
+```
+
+<p>4. Start the development server</p>
+
+```
+npm start
+```
+
+<h3>Backend:</h3>
+<h4>The backend for user management in CodeCollab is reused from another project. For detailed information about the backend implementation, please refer to the <a href="https://github.com/kasi-sj/TrackMe/blob/main/track-me-backend/README.md">Backend README</a> of the original project.</h4>
+
+<h2>🔧 Implementation</h2>
 <ul>
   <li><strong>Operation Transformation:</strong> Ensures consistency of edits made by multiple users in real-time using server_version and client_version, allowing for smooth collaborative editing.</li>
   <li><strong>Cursor Management:</strong> Tracks and updates cursor positions for all users, providing a seamless collaborative experience.</li>
