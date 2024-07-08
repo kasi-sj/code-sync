@@ -131,9 +131,9 @@ npm start
 ```
 
 <h3>Backend:</h3>
-<p>The backend for user management in CodeCollab is reused from another project. For detailed information about the backend implementation, please refer to the <a href="https://github.com/kasi-sj/TrackMe/blob/main/track-me-backend/README.md">Backend README</a> of the original project.</p>
+<h4>The backend for user management in CodeCollab is reused from another project. For detailed information about the backend implementation, please refer to the <a href="https://github.com/kasi-sj/TrackMe/blob/main/track-me-backend/README.md">Backend README</a> of the original project.</h4>
 
-<h2>🔧 Backend Implementation</h2>
+<h2>🔧 Implementation</h2>
 <ul>
   <li><strong>Operation Transformation:</strong> Ensures consistency of edits made by multiple users in real-time using server_version and client_version, allowing for smooth collaborative editing.</li>
   <li><strong>Cursor Management:</strong> Tracks and updates cursor positions for all users, providing a seamless collaborative experience.</li>
