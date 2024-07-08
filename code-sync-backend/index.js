@@ -2,6 +2,14 @@ const express = require("express");
 const http = require("http");
 const socketIo = require("socket.io");
 
+/*
+ * This is the backend server for the code sync application.
+ * It is responsible for handling the socket connections between the clients.
+ * the original backend for user authentication and other stuff is handled
+ * another backend server.
+ * which is provided in the README.md file.
+*/
+
 const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
