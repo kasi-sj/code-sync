@@ -25,7 +25,7 @@ export default function Home() {
         </p>
         <div className="my-4">
           <a
-            href=""
+            href="https://github.com/kasi-sj/code-sync/releases/tag/v1.0.1"
             className="text-sm font-semibold text-green-400 hover:text-green-500"
           >
             Download Desktop Version
