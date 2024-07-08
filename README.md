@@ -150,7 +150,7 @@ npm start
       <li>Separate channels are created by the host for each file that is in editing mode, allowing for focused updates and edits.</li>
     </ul>
   </li>
-  <li><strong>Terminal Integration:</strong> The terminal is connected by running system commands through a Rust API. Input and output streams are transferred from the frontend to the backend, enabling seamless command execution.</li>
+  <li><strong>Terminal Integration:</strong> The terminal is connected by running system commands through a Rust(tauri) API. Input and output streams are transferred from the frontend to the backend, enabling seamless command execution.</li>
 </ul>
 
 
