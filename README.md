@@ -2,7 +2,6 @@
 <p id="description">  CodeSync is a comprehensive project that includes a feature-rich code editor, designed to offer functionalities similar to VS Code with collaborative editing. The project encompasses a robust set of features, including editing, opening, listing, creating, managing, and saving files and folders. Additionally, it integrates a basic terminal. The standout feature of CodeCollab is its collaborative editing capability, which leverages socket.io for real-time communication, allowing multiple users to work on the same codebase simultaneously.
 </p>
 
-
 ## DeskTop Application
 
 <table>
@@ -11,7 +10,7 @@
     <td><img src="https://github.com/kasi-sj/code-sync/assets/110708280/8a18dbd2-56a7-4e19-bb7a-dae9c98c5946" alt="Screenshot 2" ></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/kasi-sj/code-sync/assets/110708280/337d8a7b-c23c-4170-8246-3319eb9a6d9f" alt="Screenshot 3" ></td>
+    <td><img src="https://github.com/kasi-sj/code-sync/assets/110708280/fb2671b2-31df-406d-ad43-b1b8a2c84bbc" alt="Screenshot 3" ></td>
     <td><img src="https://github.com/kasi-sj/code-sync/assets/110708280/f43dd2d0-65ff-49c4-9b5b-e1d4a2eed38b" alt="Screenshot 4" ></td>
   </tr>
   <tr>
