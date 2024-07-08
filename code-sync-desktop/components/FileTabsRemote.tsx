@@ -1,6 +1,6 @@
 "use client";
 import { useFileStore } from "@/store";
-import { Image, Tab, Tabs } from "@nextui-org/react";
+import { CircularProgress, Image, Tab, Tabs } from "@nextui-org/react";
 import ClientEditor from "@/components/ClientEditor";
 import { AiOutlineClose } from "react-icons/ai";
 import { socket } from "../socket";
@@ -11,13 +11,15 @@ import { getSize } from "@/utills";
 const FileTab = ({
   userId,
   user,
-  remoteId
-}:{
-  userId : string,
-  user : any,
-  remoteId : string
+  remoteId,
+}: {
+  userId: string;
+  user: any;
+  remoteId: string;
 }) => {
-  
+  const remotedirectoryPath = useFileStore(
+    (state: any) => state.remotedirectoryPath
+  );
   const remoteopenFiles = useFileStore((state: any) => state.remoteopenFiles);
   const remoteactiveFile = useFileStore((state: any) => state.remoteactiveFile);
   const remotesetActiveFile = useFileStore(
@@ -26,7 +28,7 @@ const FileTab = ({
   const remoteremoveOpenFile = useFileStore(
     (state: any) => state.remoteremoveOpenFile
   );
-  const size = useFileStore((state:any)=>state.size);
+  const size = useFileStore((state: any) => state.size);
   const handleClick = (file: any) => {
     if (remoteactiveFile == file) {
       remoteremoveOpenFile(file);
@@ -41,6 +43,19 @@ const FileTab = ({
     }
   };
 
+  if (remotedirectoryPath === "")
+    return (
+      <div
+        className={`flex flex-col justify-center items-center gap-5 h-full w-full mt-5 text-gray-400 `}
+      >
+        <CircularProgress />
+        <div className="flex flex-col items-center justify-center gap-2">
+          <p>connecting to {remoteId}</p>
+          <p> waiting for server to connect... </p>
+          <p>make sure remote id is correct and remote is running</p>
+        </div>
+      </div>
+    );
 
   return (
     <div className="flex  flex-col w-full">
@@ -66,8 +81,10 @@ const FileTab = ({
               title={
                 <div className="flex flex-row  items-center justify-center space-x-2">
                   <div className="flex flex-row items-center justify-center gap-2">
-                  <FileIcon file={file} isdir={false} />
-                  <p className={`text-gray-400 ${getSize(size)}`}>{file.split("\\").pop()}</p>
+                    <FileIcon file={file} isdir={false} />
+                    <p className={`text-gray-400 ${getSize(size)}`}>
+                      {file.split("\\").pop()}
+                    </p>
                   </div>
                   <button className="mt-0.5" onClick={() => handleClick(file)}>
                     <AiOutlineClose color="white" />
@@ -75,27 +92,23 @@ const FileTab = ({
                 </div>
               }
             >
-              <div
-                className={` bg-[rgb(32,32,32)] h-full  gap-20`}>
-              <ClientEditor user={user} remoteId={remoteId} path={file} />
+              <div className={` bg-[rgb(32,32,32)] h-full  gap-20`}>
+                <ClientEditor user={user} remoteId={remoteId} path={file} />
               </div>
             </Tab>
           ))}
         </Tabs>
-      ) : <div className="flex flex-col h-full items-center justify-center gap-10">
-            <Image
-              alt=""
-              src="/codesync_transparent.png"
-              className="h-64 w-auto object-cover "
-            />
-            <p className="text-gray-400 text-2xl"> 
-              No File Opened
-            </p>
-            <p className="text-gray-700 "> 
-              open a file to start coding
-            </p>
+      ) : (
+        <div className="flex flex-col h-full items-center justify-center gap-10">
+          <Image
+            alt=""
+            src="/codesync_transparent.png"
+            className="h-64 w-auto object-cover "
+          />
+          <p className="text-gray-400 text-2xl">No File Opened</p>
+          <p className="text-gray-700 ">open a file to start coding</p>
         </div>
-        }
+      )}
     </div>
   );
 };

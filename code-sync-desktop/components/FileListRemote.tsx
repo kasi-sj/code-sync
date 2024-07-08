@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { Accordion, AccordionItem } from "@nextui-org/react";
+import { Accordion, AccordionItem, CircularProgress } from "@nextui-org/react";
 import { useFileStore } from "@/store";
 import { getSize, isDirectory, readDirectory } from "@/utills";
 import { toast } from "react-toastify";
@@ -266,6 +266,10 @@ export default function App({
   }
   const size = useFileStore((state: any) => state.size);
   const name = remotedirectoryPath.split("\\").pop();
+
+  if(remotedirectoryPath === "") return <div className={`flex flex-row justify-start h-full items-start mt-5 text-gray-200 `}>
+  <CircularProgress />
+</div>
   return (
     <div className="bg-[rgb(23,23,23)] w-full h-full overflow-y-scroll text-gray-200 scrollbar-hide">
       <div className="flex flex-col border-l-1 h-full border-gray-400 w-full scrollbar-hide">

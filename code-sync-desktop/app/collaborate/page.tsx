@@ -7,10 +7,14 @@ import ResizableContainer from "@/components/ResizableContainer";
 import FileListRemote from "@/components/FileListRemote";
 import FileTabs from "@/components/FileTabsRemote";
 
+
 const Loading = () => {
   return (
-    <div className={`.flex justify-center h-full items-center`}>
+    <div className={`flex flex-col p-2 justify-center h-full items-center text-gray-200 `}>
       <CircularProgress />
+      <p>
+          Please make sure you are logged in and have provided a valid remote id
+        </p>
     </div>
   );
 };
